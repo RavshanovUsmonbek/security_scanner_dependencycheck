@@ -80,6 +80,7 @@ const dependencycheckIntegration = {
                 </div>
             </div>
             <div class="form-group">
+                <form autocomplete="off">
                     <h9>Save intermediates to</h9>
                     <p>
                         <h13>Optional</h13>
@@ -109,6 +110,7 @@ const dependencycheckIntegration = {
                         v-model="comp_path"
                         :class="{ 'is-invalid': error.scan_path }">
                     <div class="invalid-feedback">[[ error.scan_path ]]</div>
+                </form>
             </div>
         </div>
     `
